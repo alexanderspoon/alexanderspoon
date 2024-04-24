@@ -1,0 +1,285 @@
+/*--------------------------------------------------
+Generic CSS for initial components
+--------------------------------------------------*/
+:root {
+  --text-color: #000;
+
+  --button-color: #D9D9D9;
+  --button-text-color: #000000;
+  --button-hover-color: rgb(156, 156, 156);
+  --border-button-text-color: #000000;
+
+  --container-text-color: #ffffff;
+  --container-color: #ffffff00;
+  --border-container-text-color: #ffffff;
+  --border-container-color: #FFF;
+
+  --link-color: #ffffff;
+
+  --white: #FFFFFF;
+  --black: #000000;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+#root {
+  z-index: -100;
+  background-image: linear-gradient(to top left, #181818, #0a0a0a) !important;
+  color: var(--text-color);
+  min-height: 100vh;
+  width: 100%;
+  position: absolute;
+}
+.main-container {
+  width: 75%;
+  margin: auto;
+  background-color: transparent;
+}
+.main-container .container {
+  text-align: center;
+  margin: 1em auto;
+  width: 100%;
+  padding: 1em;
+  border-radius: 10px;
+  background-color: var(--container-color);
+  color: var(--container-text-color);
+}
+.main-container .border-container {
+  text-align: center;
+  width: 100%;
+  margin: 1em auto;
+  padding: 1em;
+  border-radius: 10px;
+  border: solid 3px var(--border-container-color);
+  color: var(--border-container-text-color);
+}
+.main-container button {
+  cursor: pointer;
+  border: none;
+  background-color: var(--button-color);
+  display: flex;
+  width: 200px;
+  height: 50px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0; 
+  color: #000;
+  text-align: center;
+  font-family: Bungee, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal; 
+}
+.main-container button:hover {
+  background-color: var(--button-hover-color);
+}
+.main-container .border-button {
+  cursor: pointer;
+  padding: .35em .5em;
+  font-size: 16px;
+  background-color: transparent;
+  border: solid 3px var(--button-color);
+  color: var(--border-button-text-color);
+  border-radius: 10px;
+  font-weight: 600;
+  margin: .5em;
+}
+.main-container .border-button:hover {
+  background-color: var(--button-hover-color);
+}
+.main-container a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+.main-container a:hover {
+  text-decoration: underline;
+}
+.main-container input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: block;
+}
+.main-container .center {
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+}
+.main-container .flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.loading-container {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #47474741;
+}
+.loading-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFF; 
+  text-shadow: 4px 2px 6px black;
+}
+.primary-container {
+  width: 100%;
+  margin: auto;
+  min-height: 95vh;
+}
+.white-bg {
+  background-color: white;
+  color:black
+}
+.black-bg {
+  background-color: black;
+  color: white;
+}
+.grey-bg {
+  background-color: rgb(101, 104, 107);
+  color: white;
+}
+.content-container {
+  margin: auto;
+  padding: 3em 2em;
+  width: 80%;
+  display: flex;
+}
+.flex-container{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.flex-column {
+  flex: 1;
+  padding: 1em;
+  margin: 5px;
+  min-width: 10em;
+  height: 60vh;
+  border-radius: 5px;
+}
+.center {
+  text-align: center;
+  margin: auto;
+  justify-content: center;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/*--------------------------------------------------
+Footer
+--------------------------------------------------*/
+.footer .footer-info {
+  position: absolute;
+  bottom: 0;
+  background-image: linear-gradient(to right, #4D2B2B , #3A1313);
+  color: #FFF;
+  text-align: center;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  padding: .5em;
+  left: 50%; 
+  transform: translateX(-50%); 
+  width: 100%;
+  box-shadow: 0 -2px 4px #1616168f;
+}
+.socials {
+  display: inline;
+}
+.footer-line {
+  display: inline-block;
+  width: 30%;
+  height: 2px;
+  background-color: rgb(133, 133, 133);
+  border-radius: 4px;
+  margin-bottom: .5em;
+}
+.social {
+  background-color: #f3f3f3;
+  padding: .2em;
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  margin: .1em 1em .3em 1em;
+}
+@media (max-width: 991px) {
+  .footer-line {
+      width: 15%;
+  }
+}
+
+/*--------------------------------------------------
+Navbar
+--------------------------------------------------*/
+.navbar {
+  background-image: linear-gradient(to right, #4D2B2B , #3A1313);
+  z-index: 100;
+  font-family: "Crimson Text", serif;
+  font-weight: bold;
+  color: #FFF !important;
+  text-align: center;
+}
+.nav-link {
+  color: #FFF !important;
+}
+.nav-text {
+  margin: 0 30px;
+}
+.navbar-brand {
+  color: #FFF !important;
+  text-align: center;
+  font-size: 24px !important;
+  margin-left: 60px;
+}
+.navbar-toggler {
+  background-color: #eeeeee !important;
+}
+.offcanvas-body {
+  background-color: transparent;
+  background-image: transparent;
+  font-size: 24px !important;
+}
+.offcanvas-body img {
+  margin-left: 1em;
+}
+.offcanvas-header {
+  background-image: linear-gradient(to right, #4D2B2B , #3A1313);
+  color: #eeeeee
+}
+.btn-close {
+  background-color: white !important;
+}
+.nav-gmail {
+  margin: 0 14px;
+}
+.nav-linkedin {
+  margin-left: 30px;
+}
+@media (max-width: 991px) {
+  .offcanvas-body {
+      background-color: transparent;
+      background-image: radial-gradient(farthest-side at right bottom, #080808, #222222) !important;
+      font-size: 24px !important;
+  }
+}

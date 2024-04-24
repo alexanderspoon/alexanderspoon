@@ -1,0 +1,49 @@
+.Account {
+    color: #ffffff;
+}
+.Account h3 {
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    font-size: 32px;
+    text-align: left;
+    margin: 1.5em 0 .5em 0;
+    font-family: "Crete Round", serif;
+}
+.Account p {
+    font-family: "Crimson Text", serif;
+    font-size: 16px;
+    text-align: left;
+}
+.Account img {
+    height: auto;
+    width: 80%;
+    justify-content: center;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.Account .image {
+    height: 100%;
+    margin-top: 7em;
+}
+.Account .kudos {
+    margin: 2em 0 7em 0;
+    font-family: "Crimson Text", serif;
+}
+.Account .kudos p {
+    font-size: 20px; 
+}
+.Account .kudos .kudos-people {
+    text-align: left;
+}
+.Account .kudos .kudos-people .name {
+    font-size: 20px; 
+    text-decoration-line: underline; 
+}
+.Account .kudos .kudos-people .role {
+    text-align: left;
+    font-size: 14px; 
+}
+@media (max-width: 768px) {
+    .Account .image {
+        margin-top: 1em !important;
+    }
+}

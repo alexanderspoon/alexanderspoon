@@ -1,0 +1,347 @@
+/*--------------------------------------------------
+Custom Menu Wheel
+--------------------------------------------------*/
+.Projects .menu-wheel {
+    top: 8em;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+.Projects .menu-wheel img {
+    position: relative;
+    transform: rotate(-45deg);
+    height: 50px;
+    width: auto;
+    top: 25px;
+    left: 25px;
+}
+.Projects .arrow {
+    color: white;
+    transform: rotate(180deg);
+    font-size: 24px;
+    font-weight: 800;
+}
+.Projects .back-line {
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 77px;
+    max-width: 600px;
+}
+.Projects .square {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(to right, #DB3D3D , #5C1616);
+    transform-origin: center;
+    border: solid 1px white;
+    transition: transform .2s ease; 
+    z-index: 1;
+    cursor: pointer;
+}
+.Projects .square:nth-child(1) {
+  transform: rotate(45deg) translate(50px, 50px);
+}
+.Projects .square:nth-child(2) {
+    transform: rotate(45deg) translate(50px, -50px);
+}
+.Projects .square:nth-child(3) {
+    transform: rotate(45deg) translate(-50px, 50px);
+}
+.Projects .square:nth-child(4) {
+    transform: rotate(45deg) translate(-50px, -50px);
+}
+.Projects .square.transformed:nth-child(1) {
+    transform: rotate(45deg) translate(55px, 55px) scale(1.1);
+}
+.Projects .square.transformed:nth-child(2) {
+    transform: rotate(45deg) translate(55px, -55px) scale(1.1);
+}
+.Projects .square.transformed:nth-child(3) {
+    transform: rotate(45deg) translate(-55px, 55px) scale(1.1);
+}
+.Projects .square.transformed:nth-child(4) {
+    transform: rotate(45deg) translate(-55px, -55px) scale(1.1);
+}
+.Projects .square.transformed {
+    background-image: linear-gradient(to right, #ff8686 , #942525);
+}
+.Projects .decoration {
+    top: 1.75em;
+    position: relative;
+    width: 5px;
+    margin: auto;
+}
+.Projects .dec-line {
+    position: absolute;
+    width: 5px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    transform-origin: center;
+    border-radius: 4px;
+}
+.Projects .dec-line:nth-child(1) {
+  transform: rotate(45deg) translate(-125px, 0);
+}
+.Projects .dec-line:nth-child(2) {
+    transform: rotate(135deg) translate(125px, 0);
+}
+.Projects .dec-line:nth-child(3) {
+    transform: rotate(45deg) translate(125px, 0);
+}
+.Projects .dec-line:nth-child(4) {
+    transform: rotate(135deg) translate(-125px, 0);
+}
+.Projects .bold-title {
+    font-size: 32px !important;
+    font-weight: 800;
+    transition: font-size .2s ease; 
+}
+.Projects .dec-titles {
+    position: absolute;
+    color: white;
+}
+.Projects .title {
+    font-size: 20px; 
+    position: absolute;
+    color: white;
+    font-family: "Crimson Text", serif;
+}
+.Projects .title:nth-child(1) {
+    width: 100%;
+    text-align: right;
+    float: right;
+    top: 40px;
+}
+.Projects .title:nth-child(2) {
+    width: 100%;
+    text-align: right;
+    float: right;
+    top: -80px;
+}
+.Projects .title:nth-child(3) {
+    width: 100%;
+    top: 40px;
+}
+.Projects .title:nth-child(4) {
+    width: 100%;
+    top: -80px;
+}
+
+/*--------------------------------------------------
+Portfolio Images
+--------------------------------------------------*/
+.Projects .Portfolio-title {
+    margin-top: 2em;
+    float: left;
+}
+.Projects .Portfolio-title h3 {
+    display: inline-block;
+}
+.Projects .Portfolio-title span {
+    display: inline-block;
+    margin-left: .5em;
+    font-family: "Crete Round", serif;
+    color: rgb(207, 207, 207);
+    font-size: 20px;
+}
+.Projects .portfolio-container {
+    margin-bottom: 10em;
+}
+.Projects .portfolio {
+    position: relative;
+    width: 175px;
+    display: block;
+}
+.Projects .image {
+    opacity: 1;
+    display: block;
+    width: 175px;
+    height: 175px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 4px;
+    object-fit: cover;
+}
+.Projects .middle {
+    position: absolute;
+    transition: .5s ease;
+    opacity: 0;
+    padding: .5em .5em; 
+    width: 100%;
+    height: 50%;
+    bottom: 80px;
+    transform: translateY(100%);
+    text-align: left;
+    background-image: linear-gradient(#00000000, #1b1b1b77);
+    text-shadow: 1px 1px 2px rgb(20, 20, 20);
+}
+.Projects .portfolio:hover .image {
+    opacity: 0.3;
+    cursor: pointer;
+}
+.Projects .portfolio:hover .middle {
+    opacity: 1;
+    cursor: pointer;
+}
+.Projects .text {
+    color: white;
+    font-size: 12px;
+}
+
+/*--------------------------------------------------
+Modal CSS
+--------------------------------------------------*/
+.Projects .modal-content {
+    color: black !important;
+    padding: 10px;
+}
+.Projects .modal-content h5 {
+    margin-top: 1em;
+}
+.Projects .modal-img {
+    width: 100%;
+    height: auto;
+    box-shadow: 2px 2px 4px #3a3a3a;
+}
+
+
+/*--------------------------------------------------
+General Styles
+--------------------------------------------------*/
+.Projects .main-body {
+    width: 80%;
+    margin: auto;
+    min-height: 450px;
+}
+.Projects h1 {
+    color: white;
+    font-family: "Crete Round", serif;
+    margin-top: 1em;
+}
+.Projects .containerStyles {
+    width: 100%;
+    border-radius: 1em;
+    background-image: linear-gradient(to right, #8E8E8E , #F4F4F4);
+    height: 15px;
+}
+.Projects .fillerStyles {
+    border-radius: inherit;
+    text-align: 'right';
+    transition: width 0.5s, background-color 0.5s; /* Smooth transition for width and background-color changes */
+    color: black;
+    font-weight: bold;
+    padding-left: .8em;
+    background-image: linear-gradient(to right, #F44444 , #7B0C0C);
+    height: 15px;
+
+}
+.Projects .labelStyles {
+    position: relative;
+    background-color: white;
+    padding: 0 4px;
+    font-size: 12px;
+    float: right;
+    top: -2em;
+}
+.Projects .labelCarrot {
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    background-color: white;
+    transform: rotate(45deg);
+    top: 16px;
+    right: 13px;
+}
+.Projects .graphic-design img{ 
+    padding: 0;
+    border-radius: 4px;
+    width: 50px;
+    height: 50px; 
+    object-fit: cover;
+}
+.Projects .skills p {
+    text-align: left;
+    font-family: "Crimson Text", serif;
+    font-size: 20px;
+}
+.Projects .skills h3 {
+    text-align: left;
+    margin: .5em 0;
+    font-family: "Crimson Text", serif;
+}
+.Projects .skills h5 {
+    text-align: left;
+    font-family: "Crimson Text", serif;
+    margin-top: 1em;
+}
+
+.Projects h2 {
+    text-align: left;
+    font-weight: bold;
+    font-family: "Crete Round", serif;
+}
+.Projects .underline {
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    margin: 1.5em 0;
+}
+.Projects .flex-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 2px; 
+    justify-content: flex-start; 
+}
+.Projects .tool {
+    background-color: rgb(255, 255, 255);
+    height: 70px;
+    width: 70px;
+    background-position: cover;
+    border-radius: 4px;
+    padding: .5em;
+}
+.Projects .toolbox {
+    margin-left: 1em;
+}
+.Projects .tool-title {
+    margin-top: 1.5em !important;
+}
+
+/*--------------------------------------------------
+Responsive Style Adjustments
+--------------------------------------------------*/
+@media (max-width: 768px) {
+    .Projects .image {
+        width: 110px; 
+        height: 110px;
+    }
+    .Projects .middle {
+        width: 110px;
+    }
+    .Projects .portfolio {
+        width: 110px;
+    }
+    .Projects .portfolio:hover .middle {
+        opacity: 0;
+    }
+    .Projects .portfolio:hover .image {
+        opacity: 1;
+    }
+    .Projects .title {
+        opacity: 0 !important;
+    }
+    .Projects .back-line {
+        width: 100%;
+    }
+    .Projects .modal-img {
+        width: 100%;
+        height: auto;
+    }
+}
