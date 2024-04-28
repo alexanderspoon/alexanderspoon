@@ -63,8 +63,6 @@ const Projects = ({}) => {
                 <div className='main-body'>
 
                     <div className='center'>
-                        <h6 className='not-completed'>Content Not Updated. Expected 4/27/2024</h6>
-
                         <h1>Pick a Category</h1>
                         <div className='arrow'>^</div>
                     </div>
