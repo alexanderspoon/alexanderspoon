@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.36096050.css",
-    "main.js": "/static/js/main.880ee242.js",
+    "main.js": "/static/js/main.f9517021.js",
     "static/media/ProfilePicture.png": "/static/media/ProfilePicture.47f58e11ae269628cced.png",
     "static/media/photogrammetery.PNG": "/static/media/photogrammetery.0dc6597069dfe879791e.PNG",
     "static/media/trelloboard.PNG": "/static/media/trelloboard.4f7172d75ce65b887e01.PNG",
@@ -18,6 +18,7 @@
     "static/media/motorcycle.PNG": "/static/media/motorcycle.5f222dd1ff9eacef508c.PNG",
     "static/media/dragonfly.PNG": "/static/media/dragonfly.9ae582643d5cc3cb3d8a.PNG",
     "static/media/about-profile.PNG": "/static/media/about-profile.25c70e4f08768677373e.PNG",
+    "static/media/portfolio.PNG": "/static/media/portfolio.94b397c8c0ca30316e1c.PNG",
     "static/media/game.PNG": "/static/media/game.380143527a406f5a0117.PNG",
     "static/media/PB.PNG": "/static/media/PB.5f4c01ba9c989ed8c8a1.PNG",
     "static/media/room.PNG": "/static/media/room.c95f3a68e0e81e7dce8f.PNG",
@@ -70,10 +71,10 @@
     "static/media/brush.svg": "/static/media/brush.13c6fdc690107806a55998964423dbe7.svg",
     "static/media/website.svg": "/static/media/website.9907b764958304396914ca1c626f19c1.svg",
     "main.36096050.css.map": "/static/css/main.36096050.css.map",
-    "main.880ee242.js.map": "/static/js/main.880ee242.js.map"
+    "main.f9517021.js.map": "/static/js/main.f9517021.js.map"
   },
   "entrypoints": [
     "static/css/main.36096050.css",
-    "static/js/main.880ee242.js"
+    "static/js/main.f9517021.js"
   ]
 }

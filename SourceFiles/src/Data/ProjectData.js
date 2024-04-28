@@ -9,11 +9,11 @@ const toolNames = [
 const projectNames = [
     "cat", "dice", "game", "room", "fortunefire",
     "greentide", "alexa", "trelloboard", "fategithub",
-    "TSZvideo", "arc", "discord",
+    "TSZvideo", "arc", "discord", "portfolio",
     "hades", "hollowknight", "interactiveComic",
     "PB", "photogrammetery", "raven",
     "truck", "gamification", "beamtours", "commission",
-    "fate", "motorpool", "venturecollege", "cello"
+    "fate", "motorpool", "venturecollege", "cello",
 ];
 
 const tls = {};
@@ -226,7 +226,7 @@ const projectData = [
                 image: pjs.gamification,
                 title: "Project Ludus",
                 subTitle: "CMS website for a college level course",
-                description: "This was a website that I designed and created from scratch to facilitate the gamification of education in an asynchronous learning environment.",
+                description: "Worked with one faculty member and forty students over one year to design and develop a website for the gamification of a college-level course. The website focuses on encouraging student engagement in an asynchronous learning environment using game concepts such as experience points, badges, and quest lines. Reduced instructor workload and created opportunities for the college to create different kinds of educational content. ",
             },
             {
                 image: pjs.beamtours,
@@ -235,28 +235,34 @@ const projectData = [
                 description: "Created an admin portal for an app about planning campus tours. Used Google Maps API with custom location to generate a tour path.",
             },
             {
-                image: pjs.commission,
-                title: "Commission Portfolio",
-                subTitle: "Commisioned portfolio website for Brendon Whitford",
-                description: "Commisioned portfolio website by Brendon Whitford, one of my friends and peers in college. Created a code replica of his design from Figma",
-            },
-            {
                 image: pjs.fate,
                 title: "F.A.T.E.",
                 subTitle: "Website for evaluating faculty members of colleges",
-                description: "Designed and implemented all aspects of a website designed to evaluate faculty members in a committie of people.",
+                description: "Created a website for committees to critique and grade professor portfolios against a rubric. Critiqued designs from our UI/UX designer, then converted UI/UX designs into responsive and user-friendly interfaces. Discussed design systems with clients and created timelines for new or potential features",
             },
             {
                 image: pjs.motorpool,
                 title: "Motorpool",
                 subTitle: "Website to take driver certification quizzes",
-                description: "Was brought onto this project in the middle. Picked up and finished the project.",
+                description: "Inherited codebase for Boise State MotorPool website to help commercialize driving certifications. Continued development using a DevOps structure and implemented UX testing results and redesigns",
             },
             {
                 image: pjs.venturecollege,
                 title: "Venture College",
                 subTitle: "Pitch competition website made for events",
                 description: "Full stack web developer for website made for managing events/judge's scored to questions.",
+            },
+            {
+                image: pjs.commission,
+                title: "Commission Portfolio",
+                subTitle: "Commisioned portfolio website for Brendon Whitford",
+                description: "Portfolio website by designed by Brendon Whitford, one of my friends and peers in college. Created a code replica of his design from Figma. Website is located at https://brendonwhitford.com.",
+            },
+            {
+                image: pjs.portfolio,
+                title: "Personal Portfolio Website",
+                subTitle: "Personal website to showcase projects",
+                description: "Created this website with React hosted on github pages to showcase previous projects and provide an example of my code. Project can be found at: https://github.com/alexanderspoon/alexanderspoon ",
             },
         ]
     }, 
