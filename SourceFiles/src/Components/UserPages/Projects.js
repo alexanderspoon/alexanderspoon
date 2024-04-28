@@ -160,8 +160,8 @@ const ModalComponent = ({show, info, handleClose}) => {
           <Modal.Body>
             <div className='modal-content'>
                 <img src={info.image} alt="Sample Image" className="image modal-img" />
-                <h5><strong>{info.title}</strong></h5>
-                <h6>{info.subTitle}</h6>
+                <h4><strong>{info.title}</strong></h4>
+                <h5>{info.subTitle}</h5>
                 <p>{info.description}</p>
             </div>
           </Modal.Body>

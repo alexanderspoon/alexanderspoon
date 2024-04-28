@@ -17,7 +17,10 @@ const Dashboard = ({ }) => {
                             <div className='description'>
                                 <h3>Boise State University Graduate </h3><span>(May 2024)</span>
                                 <p>Bachelors of Science in GIMM (Games, Interactive Media, Mobile Technology) </p>
-                                <button className='more-projects' onClick={() => {window.location.assign(`${window.location.origin}/#/Projects`);}}>
+                                <button className='more-projects' onClick={(event) => { 
+                                    window.scrollTo(0, 0);
+                                    window.location.assign(`${window.location.origin}/#/Projects`);
+                                }}>
                                     See my work {"->"}
                                 </button>
                             </div>

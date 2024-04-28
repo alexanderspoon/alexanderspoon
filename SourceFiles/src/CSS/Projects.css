@@ -197,14 +197,14 @@ Portfolio Images
 /*--------------------------------------------------
 Modal CSS
 --------------------------------------------------*/
-.Projects .modal-content {
+.modal-content {
     color: black !important;
     padding: 10px;
 }
-.Projects .modal-content h5 {
+.modal-content h4 {
     margin-top: 1em;
 }
-.Projects .modal-img {
+.modal-img {
     width: 100%;
     height: auto;
     box-shadow: 2px 2px 4px #3a3a3a;
